@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1. 0">
+    <title>Laedson de Oliveira</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="conteudo-total">
+
+        <section class="barra-lateral">
+            <section>
+
+                <div class="sidebar">
+                    <img src="/images/imagemPerfil.png" alt="Foto de Perfil" class="profile-img">
+                    <h2 class="sidebar-name">Laedson de Oliveira</h2>
+                    <p class="sidebar-role">Desenvolvedor Backend</p>
+                    <div class="social-links">
+                        <a href="https://github.com/seuusuario" target="_blank"><i class="fab fa-github"></i>
+                            <img src="./images/github.png"> </a>
+                        <a href="https://linkedin.com/in/seuusuario" target="_blank"><i class="fab fa-linkedin"></i>
+                            <img src="./images/linkedin.png"></a>
+                        <a href="https://twitter.com/seuusuario" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="conteudo">
+            <section id="home">
+                <h1 class="name-title">Laedson de Oliveira</h1>
+                <p class="specialization">Desenvolvedor Backend</p>
+                <img src="/images/Perfil.jpg" alt="Foto de Perfil" class="profile-img">
+                <h2>Bem-vindo ao Meu Portfólio</h2>
+                <p class="apresentacao">Sou estudante de ADS e apaixonado por desenvolvedor tecnologia.</p>
+                <p>Movido pela tecnologia e pelo aprendizado contínuo, estou sempre pronto para novos desafios que
+                    impulsionem meu crescimento. Acredito que o conhecimento transforma e que cada experiência é uma
+                    oportunidade de evolução.</p>
+
+
+            </section>
+
+            <section id="about">
+                <h2 id="sobre-mim">Sobre Mim</h2>
+                <p>Apaixonado por tecnologia e matemática, sempre busquei oportunidades para expandir meus
+                    conhecimentos. Desde cedo, meu interesse por softwares e programação me levou a ingressar no curso
+                    técnico em Desenvolvimento de Sistemas integrado ao Ensino Médio.<br>
+                <p>Durante essa jornada, mergulhei em startups, olimpíadas e projetos, conquistando importantes
+                    reconhecimentos.
+                    Sempre em busca de novos desafios e aprendizados para inovar e crescer no universo da tecnologia!
+                    🚀💻</p>
+
+            </section>
+            <section>
+                <h2>Minhas Conquistas e Habilidades</h2>
+                <button class="btn active" id="btn-conquistas" onclick="toggleContent('conquistas', this)">Conquistas
+                    Acadêmicas</button>
+                <button class="btn" id="btn-habilidades"
+                    onclick="toggleContent('habilidades', this)">Habilidades</button>
+
+                <div id="conquistas" class="content" style="display: block;">
+                    <ul>
+                        <li>🏅 Prata na Olimpíada Sapientia</li>
+                        <li>🚀 2º lugar no Startup Way</li>
+                        <li>💻 2º lugar no Desafio Landing Page</li>
+                        <li>📈 Participação no MiniEmpresa - JA</li>
+                        <li>📚 Bolsista monitor de Matemática</li>
+                        <li>🥇 Menção honrosa na OBMEP 2024</li>
+                        <li>🎯 Bolsa FACEPE para Criação de Startup e Gestão de Projetos</li>
+                    </ul>
+                </div>
+
+
+
+
+                <div id="habilidades" class="content">
+                    <ul>
+                        <li>Java
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                        <li>Spring Boot
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 75%;"></div>
+                            </div>
+                        </li>
+                        <li>Angular
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 70%;"></div>
+                            </div>
+                        </li>
+                        <li>Banco de Dados SQL
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 85%;"></div>
+                            </div>
+                        </li>
+                        <li>Git/GitHub
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 90%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <script>
+                    function toggleContent(section, btn) {
+                        document.getElementById('conquistas').style.display = 'none';
+                        document.getElementById('habilidades').style.display = 'none';
+                        document.getElementById(section).style.display = 'block';
+
+                        document.getElementById('btn-conquistas').classList.remove('active');
+                        document.getElementById('btn-habilidades').classList.remove('active');
+                        btn.classList.add('active');
+                    }
+                </script>
+
+            </section>
+
+            <section id="timeline">
+                <h2>Minha Trajetória</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>2020 - Curso Técnico em Desenvolvimento de Sistemas</h3>
+                        <p>Início dos estudos na área de tecnologia.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2023 - Ingresso na Uninassau (ADS)</h3>
+                        <p>Comecei minha graduação em Análise e Desenvolvimento de Sistemas.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2025 - Participação no Decola Tech</h3>
+                        <p>Aprimorando conhecimentos e ganhando experiência prática.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>Meus Projetos</h2>
+                <div class="project">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#" class="btn">Ver no GitHub</a>
+                </div>
+                <div class="project">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#" class="btn">Ver no GitHub</a>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="apresentacao__links">
+                    <h2 class="apresentacao__links__subtitulo">Acesse minhas redes</h2>
+                    <div id="apresentacao__links__subtitulo_links">
+                        <a class="apresentacao__links__navegacao" href="https://github.com/LaedsonDesk">
+                            <img src="./images/github.png">
+                            Github
+                        </a>
+                        <a class="apresentacao__links__navegacao"
+                            href="www.linkedin.com/in/laedson-oliveira-dev-backend">
+                            <img src="./images/linkedin.png">
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <p>&copy; 2025 Laedson de Oliveira - Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
